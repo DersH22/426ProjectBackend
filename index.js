@@ -196,7 +196,7 @@ app.get('/logout', (req, res) => {
 
 
 
-const port = 3030;
+const port = 3030 || process.env.PORT;
 app.listen(port, () => {
     console.log("running")
 })
